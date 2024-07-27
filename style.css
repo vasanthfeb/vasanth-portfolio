@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&family=Orbitron:wght@400..900&display=swap');
+
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web");
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
+* {
+  font-family: "Titillium Web", sans-serif;
+}
+body{
+    background-color: rgb(233, 220, 220) !important;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.nav-link {
+    position: relative;
+}
+.nav-link.active::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 10px;
+    width: 30%;
+    height: 3px;
+    background-color: red;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+.nav-link.active {
+    color: red !important;
+}
+
+.navbar-nav {
+    flex-direction: row;
+}
+.nav-item {
+    margin-left: 15px;
+}
+.section {
+    /* height: 100vh !important; */
+    padding: 60px 0;
+}
+/* Ensure dropdown menus are clickable */
+.dropdown-menu {
+    position: absolute;
+    will-change: transform;
+    transform: translate3d(0px, 40px, 0px);
+}
+
+.vasanth_color{
+    color: floralwhite !important;
+    font-size: 22px !important;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    letter-spacing: 2px;
+    font-weight: 600;
+
+}
+.vasanth_span{
+    color: #5918df;
+    font-weight: 600;
+
+}
+
+.nav-bgc{
+    background-color: black;  
+    padding: 20px;
+ 
+}
+.menu_color{
+    color: aliceblue !important;
+    font-size: 20px;
+    font-weight: 600;
+}
+.menu_span{
+    color: red;
+    font-weight: 500;
+}
+.navbar-toggler:focus{
+ border: 2px solid #5918df;
+}
+.navbar-toggler{
+    border: 2px solid #424242ed;
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1340px !important;
+  }
+}
+@media only screen and (max-width:768px){
+.menu_color{
+font-size: 18px;
+font-weight: 400;
+}
+.navbar-nav{
+    margin-top: 30px;
+}
+.nav-link.active::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 1px;
+    width: 30%;
+    height: 2px;
+    background-color: red;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+}
+/* ==========================     nav end    ================================*/
+.sec_one{
+    background-color: #F69414;
+    height: 100vh;
+}
+.sec_about{
+    background-color: #1E1E1E;
+    /* height: 100vh !important; */
+}
+.c6::first-letter{
+    font-size: xx-large;
+  }
+  .c6{
+    text-align: justify;
+  }
+  .I-Con{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    padding: 8px;
+    color: #000;
+   
+  }
+  .I-Con i:hover{
+    color:rgb(0, 0, 0) !important;
+  
+    border-radius: 50px; 
+    padding: 8px;
+    
+  }
+  .img-border{
+    background-color: #F69414 !important;
+    border-radius: 8px;
+    padding: 20px;
+  }
+  a:hover{
+    color: none !important;
+  }
+
+
+
+  /* =================   type start  =========== */
+  .text-orange {
+    color: #ee3f00 !important;
+    font-size: 40px !important;
+    
+  }
+  .text-grey {
+    color: #aea79f !important;
+  }
+  
+   .vasanth{
+    font-weight: 400 !important;
+    font-size: 70px ;
+    font-family: "Mitr", sans-serif;
+    /* font-weight: 700; */
+    font-style: normal;
+   }
+  #presentation {
+    height: 100vh;
+    overflow: auto;
+    padding: 2rem;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-top: 10%;
+  }
+  .resume-title {
+    text-align: left;
+    font-size: 4rem;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+  }
+  .resume-subtitle {
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    font-family: "Sen", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  }
+  .resume-pre {
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    font-family: "Sen", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  }
+  .subtitle-text{
+    font-family: "Sen", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:500;
+  font-style: normal;
+  }
+
+.first_img{
+  width: 80%;
+}
+
+
+
+
+
+/* ========================    media query start ======================================*/
+
+ @media only screen and (max-width: 768px){
+    #presentation {
+       padding: 2px;
+        margin-top: 20%;
+         /* height: 100vh !important; */
+        
+      }
+      .I-Con{
+        font-size: 23px;
+      }
+      .sec_one{
+        max-height: 90vh ;
+      }
+      .vasanth{
+        font-size: 50px !important;
+        font-weight: 500 !important;
+      }
+      .resume-subtitle{
+        font-size: 28px !important;
+      }
+      .text-orange{
+        font-size: 28px !important;
+      }
+      /* .section{
+        height: 100vh !important;
+      } */
+      .section{
+        padding: 1px !important;
+      }
+      .hide_service{
+        display: none;
+      }
+      
+  }
