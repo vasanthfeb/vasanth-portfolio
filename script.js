@@ -75,3 +75,131 @@ const Type = async (words, elementId) => {
   document.addEventListener("DOMContentLoaded", () => {
     Type(["Web Developer", "Freelancer", "Web Designer","Hacker","IOT Developer"], "resume-subtitle");
   });
+
+  //project start
+
+  $(document).ready(function(){
+    $(".b").click(function(){
+        $(this).toggleClass("b");
+        $(this).toggleClass("b-selected");
+     });
+    });
+    
+    var elem = document.querySelector('.carousel');
+    var flkty = new Flickity( elem, {
+      // options
+      cellalign: 'right',
+      pageDots: false,
+      groupCells: '20%',
+      selectedAttraction: 0.03,
+      friction: 0.15
+    });
+    var flkty = new Flickity( '.carousel', {
+      // options
+    });
+    
+    
+    $(document).ready(function(){
+    $(".all1").click(function(){
+    $(".all1").css({"background-color": "#08b1ff", "color": "black"});
+    $(".clg1").css({"background-color": "#000000", "color": "#08b1ff"});
+    $(".bus1").css({"background-color": "#000000", "color": "#08b1ff"});
+    $(".git1").css({"background-color": "#000000", "color": "#08b1ff"});
+    $(".hos1").css({"background-color": "#000000", "color": "#08b1ff"});
+    $(".exp1").css({"background-color": "#000000", "color": "#08b1ff"});
+    
+    });
+    
+    
+    $(".exp1").click(function(){
+    $(".exp1").css({"background-color": "#08b1ff", "color": "black"});
+    $(".all1").css({"background-color": "#08b1ff", "color": "black"});
+    $(".clg1").css({"background-color": "#000000", "color": "#08b1ff"});
+    $(".bus1").css({"background-color": "#000000", "color": "#08b1ff"});
+    $(".git1").css({"background-color": "#000000", "color": "#08b1ff"});
+    $(".hos1").css({"background-color": "#000000", "color": "#08b1ff"});
+    $(".all1").css({"background-color": "#000000", "color": "#08b1ff"});
+    });
+    
+    
+    
+    
+    $(".hos1").click(function(){
+    $(".hos1").css({"background-color": "#08b1ff", "color": "black"});
+    $(".all1").css({"background-color": "#08b1ff", "color": "black"});
+    $(".clg1").css({"background-color": "#000000", "color": "#08b1ff"});
+    $(".bus1").css({"background-color": "#000000", "color": "#08b1ff"});
+    $(".git1").css({"background-color": "#000000", "color": "#08b1ff"});
+    $(".all1").css({"background-color": "#000000", "color": "#08b1ff"});
+    $(".exp1").css({"background-color": "#000000", "color": "#08b1ff"});
+    });
+    
+    
+    
+    
+    
+    $(".bus1").click(function(){
+    $(".bus1").css({"background-color": "#08b1ff", "color": "black"});
+    $(".all1").css({"background-color": "#08b1ff", "color": "black"});
+    $(".clg1").css({"background-color": "#000000", "color": "#08b1ff"});
+    $(".all1").css({"background-color": "#000000", "color": "#08b1ff"});
+    $(".git1").css({"background-color": "#000000", "color": "#08b1ff"});
+    $(".hos1").css({"background-color": "#000000", "color": "#08b1ff"});
+    $(".exp1").css({"background-color": "#000000", "color": "#08b1ff"});
+    });
+    
+    
+    
+    $(".clg1").click(function(){
+    $(".clg1").css({"background-color": "#08b1ff", "color": "black"});
+    $(".all1").css({"background-color": "#08b1ff", "color": "black"});
+    $(".all1").css({"background-color": "#000000", "color": "#08b1ff"});
+    $(".bus1").css({"background-color": "#000000", "color": "#08b1ff"});
+    $(".git1").css({"background-color": "#000000", "color": "#08b1ff"});
+    $(".hos1").css({"background-color": "#000000", "color": "#08b1ff"});
+    $(".exp1").css({"background-color": "#000000", "color": "#08b1ff"});
+    });
+    
+    
+    
+    
+    $(".git1").click(function(){
+    $(".git1").css({"background-color": "#08b1ff", "color": "black"});
+    $(".all1").css({"background-color": "#08b1ff", "color": "black"});
+    $(".clg1").css({"background-color": "#000000", "color": "#08b1ff"});
+    $(".bus1").css({"background-color": "#000000", "color": "#08b1ff"});
+    $(".all1").css({"background-color": "#000000", "color": "#08b1ff"});
+    $(".hos1").css({"background-color": "#000000", "color": "#08b1ff"});
+    $(".exp1").css({"background-color": "#000000", "color": "#08b1ff"});
+    });
+    
+    
+    
+    });
+
+    $(document).ready(function(){
+
+      $(".filter-button").click(function(){
+          var value = $(this).attr('data-filter');
+          
+          if(value == "all")
+          {
+              
+              $('.filter').show('1000');
+          }
+          else
+          {
+            
+              $(".filter").not('.'+value).hide('3000');
+              $('.filter').filter('.'+value).show('3000');
+              
+          }
+      });
+      
+      if ($(".filter-button").removeClass("active")) {
+  $(this).removeClass("active");
+  }
+  $(this).addClass("active");
+  
+  
+  });

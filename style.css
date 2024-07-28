@@ -219,12 +219,68 @@ font-weight: 400;
 }
 
 
+/* ===================   project start  ============== */
+.three-box{
+  background-color: #222222;
+  color: #fff !important;
+  padding: 20px;
+  border-radius: 12px;
+}
+.three-box:hover{
+  background-color: rgb(190, 202, 198);
+  color: #08b1ff;
+}
+.three-box .a-color:hover{
+  color: rgb(121, 115, 120);
+}
 
-
+.three_icon{
+  font-size: 40px;
+}
+.a-color{
+  color: #fff;
+  text-decoration: none !important;
+  
+}
+.three-text{
+  text-align: justify;
+  text-decoration: none !important;
+}
+.img-responsive{
+  padding: 10px !important;
+  border: 2px solid #1E1E1E;
+  margin-bottom: 20px;
+}
+.img-responsive:hover {
+  border: 2px solid #08b1ff;
+  box-shadow: rgba(64, 192, 243, 0.74) 0px 5px 15px;
+  padding: 10px;
+ 
+} 
+.pro_bg{
+  background-color: #1E1E1E;
+  /* height: 100vh; */
+}
+.all1{
+  background-color: #08b1ff;
+  color:black;
+}
+.clg1 ,.exp1, .hos1 ,.bus1, .git1{
+  color: #08b1ff ;
+  background-color: #000000;
+  font-size: 18px;
+}
+.clg1:hover ,.exp1:hover, .hos1:hover ,.bus1:hover, .git1:hover{
+  background-color: #08b1ff;
+  color:black;
+}
 
 /* ========================    media query start ======================================*/
 
  @media only screen and (max-width: 768px){
+  .mob_pad{
+    margin-top: 50px !important;
+  }
     #presentation {
        padding: 2px;
         margin-top: 20%;
