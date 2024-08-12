@@ -270,7 +270,7 @@ font-weight: 400;
   color:black;
 }
 .clg1 ,.exp1, .hos1 ,.bus1, .git1{
-  color: #08b1ff ;
+  color: #08b1ff;
   background-color: #000000;
   font-size: 18px;
 }
@@ -282,9 +282,9 @@ font-weight: 400;
 /* ========================    media query start ======================================*/
 
  @media only screen and (max-width: 768px){
-  .mob_pad{
-    margin-top: 50px !important;
-  }
+    /* .mob_pad{
+      margin-top: 50px !important;
+    } */
     #presentation {
        padding: 2px;
         margin-top: 20%;
@@ -502,5 +502,12 @@ font-weight: 400;
   height:35px;
   height:5px;
   width:0px;
+}
+.bg-project{
+  background-color: #000;
+}
+.bg-success{
+  background-color: rgb(1, 111, 18) !important;
+ 
 }
 /* ===================================today */
