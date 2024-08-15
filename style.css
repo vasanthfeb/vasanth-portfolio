@@ -511,3 +511,41 @@ font-weight: 400;
  
 }
 /* ===================================today */
+
+p::selection{
+  background-color: #F69414 !important;
+  color: #000;
+}
+
+h3::selection{
+  background-color: #F69414 !important;
+  color: #000;
+}
+
+h2::selection{
+  background-color: #F69414 !important;
+  color: #000;
+}
+
+h1::selection{
+  background-color: #F69414 !important;
+  color: #000;
+}
+h6::selection{
+  background-color: #F69414 !important;
+  color: #000;
+}
+span::selection{
+  background-color: #F69414 !important;
+  color: #000;
+
+}
+label::selection{
+  background-color: #F69414 !important;
+  color: #000;
+
+}
+div::selection{
+  background-color: #F69414 !important;
+  color: #000;
+}
