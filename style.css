@@ -549,3 +549,35 @@ div::selection{
   background-color: #F69414 !important;
   color: #000;
 }
+/* newly add for first image slide start */
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 530px ; 
+  overflow: hidden;
+ 
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border-radius: 10px;
+}
+
+.slider-image {
+  position: absolute;
+  width: 100%;
+  height: 100% !important;
+  object-fit: cover; 
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slider-image.active {
+  opacity: 1;
+}
+
+@media only screen and (max-width:768px){
+  .slider{
+    height: 360px !important;
+  }
+}
+/* newly add for first image slide end */

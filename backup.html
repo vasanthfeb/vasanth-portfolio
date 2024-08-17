@@ -52,31 +52,7 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-5">
-            <div class="slider mt-4">
-                <img src="./img/vas.jpg" alt="Image 1" class="slider-image w-100  first_img test-shine">
-                <img src="./img/k.jpg" alt="Image 2" class="slider-image w-100  first_img test-shine">
-                <img src="./img/vas.jpg" alt="Image 3" class="slider-image w-100  first_img test-shine">
-                <img src="./img/image.psd(1).jpg" alt="Image 4" class="slider-image w-100  first_img test-shine">
-            </div>
-            <script>
-                document.addEventListener('DOMContentLoaded', () => {
-                    const images = document.querySelectorAll('.slider-image');
-                    let currentIndex = 0;
-        
-                    function showNextImage() {
-                        images[currentIndex].classList.remove('active');
-                        currentIndex = (currentIndex + 1) % images.length;
-                        images[currentIndex].classList.add('active');
-                    }
-        
-                    // Initialize first image
-                    images[currentIndex].classList.add('active');
-        
-                    // Change image every 5 seconds
-                    setInterval(showNextImage, 5000);
-                });
-            </script>
-            
+            <img src="./img/vas.jpg" alt="" class="w-100 mt-4 first_img test-shine">
         </div>
         <div class="col-lg-7">
             <div id="presentation">

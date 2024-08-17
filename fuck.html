@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .slider {
+            position: relative;
+            width: 100%;
+            height: 400px; /* Adjust height as needed */
+            overflow: hidden;
+        }
+
+        .slider-image {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the image covers the container */
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .slider-image.active {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="section1" class="section sec_one">
+        <div class="slider">
+            <img src="https://via.placeholder.com/800x400?text=Image+1" alt="Image 1" class="slider-image">
+            <img src="https://via.placeholder.com/800x400?text=Image+2" alt="Image 2" class="slider-image">
+            <img src="https://via.placeholder.com/800x400?text=Image+3" alt="Image 3" class="slider-image">
+            <img src="https://via.placeholder.com/800x400?text=Image+4" alt="Image 4" class="slider-image">
+        </div>
+        <div id="presentation">
+            <h3 class="resume-pre text-orange">Hi! I'm</h3>
+            <h1 class="resume-title vasanth">Vasanth</h1>
+            <h2 class="resume-subtitle text-orange" id="resume-subtitle">I'm a <span class="subtitle-text"></span></h2>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const images = document.querySelectorAll('.slider-image');
+            let currentIndex = 0;
+
+            function showNextImage() {
+                images[currentIndex].classList.remove('active');
+                currentIndex = (currentIndex + 1) % images.length;
+                images[currentIndex].classList.add('active');
+            }
+
+            // Initialize first image
+            images[currentIndex].classList.add('active');
+
+            // Change image every 5 seconds
+            setInterval(showNextImage, 5000);
+        });
+    </script>
+</body>
+</html>
