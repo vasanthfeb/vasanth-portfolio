@@ -232,7 +232,7 @@ font-weight: 400;
 }
 .three-box:hover{
   background-color: rgb(190, 202, 198);
-  color: #08b1ff;
+  color: #FF0000;
 }
 .three-box .a-color:hover{
   color: rgb(121, 115, 120);
@@ -256,7 +256,7 @@ font-weight: 400;
   margin-bottom: 20px;
 }
 .img-responsive:hover {
-  border: 2px solid #08b1ff;
+  border: 2px solid #FF0000;
   box-shadow: rgba(64, 192, 243, 0.74) 0px 5px 15px;
   padding: 10px;
  
@@ -266,16 +266,16 @@ font-weight: 400;
   /* height: 100vh; */
 }
 .all1{
-  background-color: #08b1ff;
+  background-color: #FF0000;
   color:black;
 }
 .clg1 ,.exp1, .hos1 ,.bus1, .git1{
-  color: #08b1ff;
+  color: #FF0000;
   background-color: #000000;
   font-size: 18px;
 }
 .clg1:hover ,.exp1:hover, .hos1:hover ,.bus1:hover, .git1:hover{
-  background-color: #08b1ff;
+  background-color: #FF0000;
   color:black;
 }
 
@@ -574,7 +574,12 @@ div::selection{
 .slider-image.active {
   opacity: 1;
 }
-
+body{
+  overflow-x: hidden !important;
+}
+head{
+  overflow-x: hidden !important;
+}
 @media only screen and (max-width:768px){
   .slider{
     height: 360px !important;
