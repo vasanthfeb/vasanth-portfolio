@@ -238,7 +238,7 @@ body{
 }
 .three-box:hover{
   background-color: rgb(190, 202, 198);
-  color: #FF0000;
+  color: #0092CD;
 }
 .three-box .a-color:hover{
   color: rgb(121, 115, 120);
@@ -262,7 +262,7 @@ body{
   margin-bottom: 20px;
 }
 .img-responsive:hover {
-  border: 2px solid #FF0000;
+  border: 2px solid #0092CD;
   box-shadow: rgba(64, 192, 243, 0.74) 0px 5px 15px;
   padding: 10px;
  
@@ -272,16 +272,16 @@ body{
   /* height: 100vh; */
 }
 .all1{
-  background-color: #FF0000;
+  background-color: #0092CD;
   color:black;
 }
 .clg1 ,.exp1, .hos1 ,.bus1, .git1{
-  color: #FF0000;
+  color: #0092CD;
   background-color: #000000;
   font-size: 18px;
 }
 .clg1:hover ,.exp1:hover, .hos1:hover ,.bus1:hover, .git1:hover{
-  background-color: #FF0000;
+  background-color: #0092CD;
   color:black;
 }
 

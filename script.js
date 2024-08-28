@@ -101,37 +101,37 @@ const Type = async (words, elementId) => {
     
     $(document).ready(function(){
     $(".all1").click(function(){
-    $(".all1").css({"background-color": "#FF0000", "color": "black"});
-    $(".clg1").css({"background-color": "#000000", "color": "#FF0000"});
-    $(".bus1").css({"background-color": "#000000", "color": "#FF0000"});
-    $(".git1").css({"background-color": "#000000", "color": "#FF0000"});
-    $(".hos1").css({"background-color": "#000000", "color": "#FF0000"});
-    $(".exp1").css({"background-color": "#000000", "color": "#FF0000"});
+    $(".all1").css({"background-color": "#0092CD", "color": "black"});
+    $(".clg1").css({"background-color": "#000000", "color": "#0092CD"});
+    $(".bus1").css({"background-color": "#000000", "color": "#0092CD"});
+    $(".git1").css({"background-color": "#000000", "color": "#0092CD"});
+    $(".hos1").css({"background-color": "#000000", "color": "#0092CD"});
+    $(".exp1").css({"background-color": "#000000", "color": "#0092CD"});
     
     });
     
     
     $(".exp1").click(function(){
-    $(".exp1").css({"background-color": "#FF0000", "color": "black"});
-    $(".all1").css({"background-color": "#FF0000", "color": "black"});
-    $(".clg1").css({"background-color": "#000000", "color": "#FF0000"});
-    $(".bus1").css({"background-color": "#000000", "color": "#FF0000"});
-    $(".git1").css({"background-color": "#000000", "color": "#FF0000"});
-    $(".hos1").css({"background-color": "#000000", "color": "#FF0000"});
-    $(".all1").css({"background-color": "#000000", "color": "#FF0000"});
+    $(".exp1").css({"background-color": "#0092CD", "color": "black"});
+    $(".all1").css({"background-color": "#0092CD", "color": "black"});
+    $(".clg1").css({"background-color": "#000000", "color": "#0092CD"});
+    $(".bus1").css({"background-color": "#000000", "color": "#0092CD"});
+    $(".git1").css({"background-color": "#000000", "color": "#0092CD"});
+    $(".hos1").css({"background-color": "#000000", "color": "#0092CD"});
+    $(".all1").css({"background-color": "#000000", "color": "#0092CD"});
     });
     
     
     
     
     $(".hos1").click(function(){
-    $(".hos1").css({"background-color": "#FF0000", "color": "black"});
-    $(".all1").css({"background-color": "#FF0000", "color": "black"});
-    $(".clg1").css({"background-color": "#000000", "color": "#FF0000"});
-    $(".bus1").css({"background-color": "#000000", "color": "#FF0000"});
-    $(".git1").css({"background-color": "#000000", "color": "#FF0000"});
-    $(".all1").css({"background-color": "#000000", "color": "#FF0000"});
-    $(".exp1").css({"background-color": "#000000", "color": "#FF0000"});
+    $(".hos1").css({"background-color": "#0092CD", "color": "black"});
+    $(".all1").css({"background-color": "#0092CD", "color": "black"});
+    $(".clg1").css({"background-color": "#000000", "color": "#0092CD"});
+    $(".bus1").css({"background-color": "#000000", "color": "#0092CD"});
+    $(".git1").css({"background-color": "#000000", "color": "#0092CD"});
+    $(".all1").css({"background-color": "#000000", "color": "#0092CD"});
+    $(".exp1").css({"background-color": "#000000", "color": "#0092CD"});
     });
     
     
@@ -139,38 +139,38 @@ const Type = async (words, elementId) => {
     
     
     $(".bus1").click(function(){
-    $(".bus1").css({"background-color": "#FF0000", "color": "black"});
-    $(".all1").css({"background-color": "#FF0000", "color": "black"});
-    $(".clg1").css({"background-color": "#000000", "color": "#FF0000"});
-    $(".all1").css({"background-color": "#000000", "color": "#FF0000"});
-    $(".git1").css({"background-color": "#000000", "color": "#FF0000"});
-    $(".hos1").css({"background-color": "#000000", "color": "#FF0000"});
-    $(".exp1").css({"background-color": "#000000", "color": "#FF0000"});
+    $(".bus1").css({"background-color": "#0092CD", "color": "black"});
+    $(".all1").css({"background-color": "#0092CD", "color": "black"});
+    $(".clg1").css({"background-color": "#000000", "color": "#0092CD"});
+    $(".all1").css({"background-color": "#000000", "color": "#0092CD"});
+    $(".git1").css({"background-color": "#000000", "color": "#0092CD"});
+    $(".hos1").css({"background-color": "#000000", "color": "#0092CD"});
+    $(".exp1").css({"background-color": "#000000", "color": "#0092CD"});
     });
     
     
     
     $(".clg1").click(function(){
-    $(".clg1").css({"background-color": "#FF0000", "color": "black"});
-    $(".all1").css({"background-color": "#FF0000", "color": "black"});
-    $(".all1").css({"background-color": "#000000", "color": "#FF0000"});
-    $(".bus1").css({"background-color": "#000000", "color": "#FF0000"});
-    $(".git1").css({"background-color": "#000000", "color": "#FF0000"});
-    $(".hos1").css({"background-color": "#000000", "color": "#FF0000"});
-    $(".exp1").css({"background-color": "#000000", "color": "#FF0000"});
+    $(".clg1").css({"background-color": "#0092CD", "color": "black"});
+    $(".all1").css({"background-color": "#0092CD", "color": "black"});
+    $(".all1").css({"background-color": "#000000", "color": "#0092CD"});
+    $(".bus1").css({"background-color": "#000000", "color": "#0092CD"});
+    $(".git1").css({"background-color": "#000000", "color": "#0092CD"});
+    $(".hos1").css({"background-color": "#000000", "color": "#0092CD"});
+    $(".exp1").css({"background-color": "#000000", "color": "#0092CD"});
     });
     
     
     
     
     $(".git1").click(function(){
-    $(".git1").css({"background-color": "#FF0000", "color": "black"});
-    $(".all1").css({"background-color": "#FF0000", "color": "black"});
-    $(".clg1").css({"background-color": "#000000", "color": "#FF0000"});
-    $(".bus1").css({"background-color": "#000000", "color": "#FF0000"});
-    $(".all1").css({"background-color": "#000000", "color": "#FF0000"});
-    $(".hos1").css({"background-color": "#000000", "color": "#FF0000"});
-    $(".exp1").css({"background-color": "#000000", "color": "#FF0000"});
+    $(".git1").css({"background-color": "#0092CD", "color": "black"});
+    $(".all1").css({"background-color": "#0092CD", "color": "black"});
+    $(".clg1").css({"background-color": "#000000", "color": "#0092CD"});
+    $(".bus1").css({"background-color": "#000000", "color": "#0092CD"});
+    $(".all1").css({"background-color": "#000000", "color": "#0092CD"});
+    $(".hos1").css({"background-color": "#000000", "color": "#0092CD"});
+    $(".exp1").css({"background-color": "#000000", "color": "#0092CD"});
     });
     
     
