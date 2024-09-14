@@ -73,7 +73,7 @@ const Type = async (words, elementId) => {
   };
 
   document.addEventListener("DOMContentLoaded", () => {
-    Type(["Web Developer", "Freelancer","Web Engineer", "Web Designer","Hacker","IOT Developer"], "resume-subtitle");
+    Type(["Web Developer", "Freelancer ","Web Engineer ", "Web Designer ","Hacker ","IOT Developer "], "resume-subtitle");
   });
 
   //project start
