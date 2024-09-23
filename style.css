@@ -600,14 +600,11 @@ head{
 }
 @media only screen and (max-width:768px){
   .slider{
-    height: 360px !important;
+    height: 300px !important;
   }
 }
 /* newly add for first image slide end */
 /* old yello color :#F69414 */
-.slide_row{
-  
-}
 
 
 
