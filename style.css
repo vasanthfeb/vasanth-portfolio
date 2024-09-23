@@ -313,7 +313,7 @@ body{
         font-size: 23px;
       }
       .sec_one{
-        max-height: 90vh ;
+        max-height: 300vh  !important;
       }
       .vasanth{
         font-size: 50px !important;
@@ -608,3 +608,9 @@ head{
 .slide_row{
   
 }
+
+
+
+
+
+
