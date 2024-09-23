@@ -191,7 +191,7 @@ body{
     font-style: normal;
    }
   #presentation {
-    height: 100vh;
+    max-height: 100vh;
     overflow: hidden;
     padding: 2rem;
     margin-left: 2vw;
