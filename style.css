@@ -85,7 +85,7 @@ body{
  border: 2px solid #5918df;
 }
 .navbar-toggler{
-    border: 2px solid #424242ed;
+    border: 2px solid #5918df;
 }
 @media (min-width: 1200px) {
   .container {
@@ -170,7 +170,7 @@ body{
   background-color: #d7d7d700;
   color: #000 !important;
   border: 3px solid black;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
   /* =================   type start  =========== */
   .text-orange {
