@@ -5,47 +5,200 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vasanth</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href="./style.css"> -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"> -->
     <!-- ion cdn end -->
 </head>
+<style>
+    .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link.active::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 10px;
+    width: 30%;
+    height: 3px;
+    background-color: #0092CD;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+.nav-link.active {
+    color: #0092CD !important;
+}
+
+.navbar-nav {
+    flex-direction: row;
+}
+
+.nav-item {
+    margin-left: 15px;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.dropdown-menu {
+    position: absolute;
+    will-change: transform;
+    transform: translate3d(0px, 40px, 0px);
+}
+
+.vasanth_color {
+    color: floralwhite !important;
+    font-size: 22px !important;
+    font-family: "Orbitron", sans-serif;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.vasanth_span {
+    color: #5918df;
+    font-weight: 600;
+}
+
+.nav-bgc {
+    background-color: black;  
+    padding: 20px;
+}
+
+.menu_color {
+    color: aliceblue !important;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.menu_span {
+    color: #0092CD;
+    font-weight: 500;
+}
+
+.navbar-toggler:focus {
+    border: 2px solid #5918df;
+}
+
+.navbar-toggler {
+    border: 2px solid #5918df;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1340px !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        margin-top: 20px; /* Adjust for better spacing */
+        width: 100%; /* Make it full width */
+    }
+
+    .nav-item {
+        margin-left: 0; /* Reset left margin for mobile */
+        margin-bottom: 10px; /* Add spacing between items */
+    }
+
+    .nav-link {
+        text-align: center; /* Center align nav links */
+    }
+
+    .menu_color {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .nav-link.active::after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 50%; /* Center the indicator */
+        transform: translateX(-50%);
+        width: 30%;
+        height: 2px;
+        background-color: #0092CD;
+        border-radius: 2px;
+        transition: width 0.3s ease;
+    }
+}
+
+body {
+    overflow-x: hidden !important;
+}
+
+/* Existing styles... */
+
+@media only screen and (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        margin-top: 20px; /* Adjust for better spacing */
+        width: 100%; /* Make it full width */
+        text-align: left; /* Left align the menu items */
+    }
+
+    .nav-item {
+        margin-left: 0; /* Reset left margin for mobile */
+        margin-bottom: 10px; /* Add spacing between items */
+    }
+
+    .nav-link.active::after {
+        display: none; /* Remove the active underline in mobile view */
+    }
+
+    .menu_color {
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+
+/* Ensure the body remains hidden on overflow */
+body {
+    overflow-x: hidden !important;
+}
+
+</style>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light nav-bgc">
         <div class="container">
-            <!-- <a class="navbar-brand" href="#">Logo</a> -->
-            <a class="navbar-brand vasanth_color" href="#"><span class="vasanth_span">&lt;    </span> VASANTH <span class="vasanth_span">&#47; &gt;</span> </a>
+            <a class="navbar-brand vasanth_color" href="#"><span class="vasanth_span">&lt;    </span> VASANTH <span class="vasanth_span">&#47; &gt;</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <!-- <a class="nav-link" href="#section1">Menu 1</a> -->
-                        <a class="nav-link menu_color" href="./index.html">Home  <span class="menu_span">&#47; &gt;</span></a>
-                    </li>
-                    <li class="nav-item hide_service">
-                        <!-- <a class="nav-link" href="#section2">Menu 2</a> -->
-                        <a class="nav-link menu_color" href="#about">About  <span class="menu_span">&#47; &gt;</span> </a>
-                    </li>
-                    <li class="nav-item hide_service">
-                        <!-- <a class="nav-link" href="#section3">Menu 3</a> -->
-                        <a class="nav-link menu_color" href="#services">Services   <span class="menu_span">&#47; &gt;</span> </a>
+                        <a class="nav-link menu_color" href="./index.html">Home <span class="menu_span">&#47; &gt;</span></a>
                     </li>
                     <li class="nav-item">
-                        <!-- <a class="nav-link" href="#section4">Menu 4</a> -->
-                        <a class="nav-link menu_color" href="#projects">Projects <span class="menu_span">&#47; &gt;</span> </a>
+                        <a class="nav-link menu_color" href="#about">About <span class="menu_span">&#47; &gt;</span></a>
                     </li>
                     <li class="nav-item">
-                        <!-- <a class="nav-link" href="#section5">Menu 5</a> -->
-                        <a class="nav-link menu_color" href="#contact">Contact <span class="menu_span">&#47; &gt;</span> </a>
+                        <a class="nav-link menu_color" href="#services">Services <span class="menu_span">&#47; &gt;</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu_color" href="#projects">Projects <span class="menu_span">&#47; &gt;</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu_color" href="#contact">Contact <span class="menu_span">&#47; &gt;</span></a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    
 
 
 
@@ -546,18 +699,20 @@
 
 
 
- //nav start
- const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
- const navbarToggler = document.querySelector('.navbar-toggler');
- const navbarCollapse = document.querySelector('#navbarNav');
 
- navLinks.forEach(link => {
-     link.addEventListener('click', () => {
-         if (navbarCollapse.classList.contains('show')) {
-             navbarToggler.click(); // Simulate a click on the toggler to close the navbar
-         }
-     });
- });
+
+
+ const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const navbarCollapse = document.querySelector('#navbarNav');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (navbarCollapse.classList.contains('show')) {
+                navbarToggler.click(); // Simulate a click on the toggler to close the navbar
+            }
+        });
+    });
     </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>

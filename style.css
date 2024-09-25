@@ -11,112 +11,132 @@ body{
     background-color: rgb(233, 220, 220) !important;
     overflow-x: hidden !important;
 }
-
 .navbar {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
+
 .nav-link {
-    position: relative;
+  position: relative;
 }
+
 .nav-link.active::after {
-    content: "";
-    position: absolute;
-    bottom: -5px;
-    left: 10px;
-    width: 30%;
-    height: 3px;
-    background-color: #0092CD;
-    border-radius: 2px;
-    transition: width 0.3s ease;
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 10px;
+  width: 30%;
+  height: 3px;
+  background-color: #0092CD;
+  border-radius: 2px;
+  transition: width 0.3s ease;
 }
+
 .nav-link.active {
-    color: #0092CD !important;
+  color: #0092CD !important;
 }
 
 .navbar-nav {
-    flex-direction: row;
+  flex-direction: row;
 }
+
 .nav-item {
-    margin-left: 15px;
+  margin-left: 15px;
 }
+
 .section {
-    /* height: 100vh !important; */
-    padding: 60px 0;
+  padding: 60px 0;
 }
-/* Ensure dropdown menus are clickable */
+
 .dropdown-menu {
-    position: absolute;
-    will-change: transform;
-    transform: translate3d(0px, 40px, 0px);
+  position: absolute;
+  will-change: transform;
+  transform: translate3d(0px, 40px, 0px);
 }
 
-.vasanth_color{
-    color: floralwhite !important;
-    font-size: 22px !important;
-    font-family: "Orbitron", sans-serif;
-    font-optical-sizing: auto;
-    letter-spacing: 2px;
-    font-weight: 600;
-
-}
-.vasanth_span{
-    color: #5918df;
-    font-weight: 600;
-
+.vasanth_color {
+  color: floralwhite !important;
+  font-size: 22px !important;
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 2px;
+  font-weight: 600;
 }
 
-.nav-bgc{
-    background-color: black;  
-    padding: 20px;
- 
+.vasanth_span {
+  color: #5918df;
+  font-weight: 600;
 }
-.menu_color{
-    color: aliceblue !important;
-    font-size: 20px;
-    font-weight: 600;
+
+.nav-bgc {
+  background-color: black;  
+  padding: 20px;
 }
-.menu_span{
-    color: #0092CD;
-    font-weight: 500;
+
+.menu_color {
+  color: aliceblue !important;
+  font-size: 20px;
+  font-weight: 600;
 }
-.navbar-toggler:focus{
- border: 2px solid #5918df;
+
+.menu_span {
+  color: #0092CD;
+  font-weight: 500;
 }
-.navbar-toggler{
-    border: 2px solid #5918df;
+
+.navbar-toggler:focus {
+  border: 2px solid #5918df;
 }
+
+.navbar-toggler {
+  border: 2px solid #5918df;
+}
+
 @media (min-width: 1200px) {
   .container {
-    max-width: 1340px !important;
+      max-width: 1340px !important;
   }
 }
-@media only screen and (max-width:768px){
-.menu_color{
-font-size: 18px;
-font-weight: 400;
+
+@media only screen and (max-width: 768px) {
+  .navbar-nav {
+      flex-direction: column;
+      margin-top: 20px; /* Adjust for better spacing */
+      width: 100%; /* Make it full width */
+  }
+
+  .nav-item {
+      margin-left: 0; /* Reset left margin for mobile */
+      margin-bottom: 10px; /* Add spacing between items */
+  }
+
+  .nav-link {
+      text-align: center; /* Center align nav links */
+  }
+
+  .menu_color {
+      font-size: 18px;
+      font-weight: 400;
+  }
+
+  .nav-link.active::after {
+      content: "";
+      position: absolute;
+      bottom: -3px;
+      left: 50%; /* Center the indicator */
+      transform: translateX(-50%);
+      width: 30%;
+      height: 2px;
+      background-color: #0092CD;
+      border-radius: 2px;
+      transition: width 0.3s ease;
+  }
 }
-.navbar-nav{
-    margin-top: 30px;
-}
-.nav-link.active::after {
-    content: "";
-    position: absolute;
-    bottom: -3px;
-    left: 1px;
-    width: 30%;
-    height: 2px;
-    background-color: #0092CD;
-    border-radius: 2px;
-    transition: width 0.3s ease;
-}
-body{
+
+body {
   overflow-x: hidden !important;
-
 }
 
-}
 /* ==========================     nav end    ================================*/
 .sec_one{
     background-color: #0092CD;
@@ -331,11 +351,34 @@ body{
       .section{
         padding: 1px !important;
       }
-      .hide_service{
+      /* .hide_service{
         display: none;
       }
-      
+       */
   }
+  
+@media only screen and (max-width: 768px) {
+  .navbar-nav {
+      flex-direction: column;
+      margin-top: 20px; /* Adjust for better spacing */
+      width: 100%; /* Make it full width */
+      text-align: left; /* Left align the menu items */
+  }
+
+  .nav-item {
+      margin-left: 0; /* Reset left margin for mobile */
+      margin-bottom: 10px; /* Add spacing between items */
+  }
+
+  .nav-link.active::after {
+      display: none; /* Remove the active underline in mobile view */
+  }
+
+  .menu_color {
+      font-size: 18px;
+      font-weight: 400;
+  }
+}
 
 
   /* ==========================home project page =====================*/
