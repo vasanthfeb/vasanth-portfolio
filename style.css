@@ -645,6 +645,16 @@ head{
   .slider{
     height: 300px !important;
   }
+  body{
+    overflow-x: hidden !important;
+  }
+  head{
+    overflow-x: hidden !important;
+
+  }
+  html{
+    overflow-x: hidden !important;
+  }
 }
 /* newly add for first image slide end */
 /* old yello color :#F69414 */
