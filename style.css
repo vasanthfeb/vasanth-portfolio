@@ -654,5 +654,29 @@ head{
 .new_blue{
   background-color: #0092CD;
 }
+.what_img{
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the items horizontally */
+  justify-content: center; 
+ 
+}
+.icon_img{
+  width: 130px;
+}
+.z1{
+  color: #32CECE;
+  font-weight: 600;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.11);
 
+}
+.what_img {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
 
+.animate {
+  opacity: 1;
+  transform: translateX(0);
+}

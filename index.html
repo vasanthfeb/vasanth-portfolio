@@ -28,11 +28,11 @@
                     </li>
                     <li class="nav-item hide_service">
                         <!-- <a class="nav-link" href="#section2">Menu 2</a> -->
-                        <a class="nav-link menu_color" href="#about">About  <span class="menu_span">&#47; &gt;</span> </a>
+                        <a class="nav-link menu_color" href="#about">About Me <span class="menu_span">&#47; &gt;</span> </a>
                     </li>
                     <li class="nav-item hide_service">
                         <!-- <a class="nav-link" href="#section3">Menu 3</a> -->
-                        <a class="nav-link menu_color" href="#services">Services   <span class="menu_span">&#47; &gt;</span> </a>
+                        <a class="nav-link menu_color" href="#whatido">What I Do   <span class="menu_span">&#47; &gt;</span> </a>
                     </li>
                     <li class="nav-item">
                         <!-- <a class="nav-link" href="#section4">Menu 4</a> -->
@@ -267,13 +267,81 @@
     </div>
  </div>
  <!-- =================   section 2 end =================== -->
+ <!-- ===================    whatido start ==============-->
     
-    
-    <div id="services" class="section bg-light">
+    <div id="whatido" class="section bg-light ">
         <div class="container">
-            <h2 class="text-center tit_le mb-5 ">Services <span class="vasanth_span">&#47; &gt;</span></h2>
+            <h2 class="text-center tit_le mb-5 pt-5 ">What I Do <span class="vasanth_span">&#47; &gt;</span></h2>
+        </div>
+
+
+        <div class="container pb-5 pt-3">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="what_img">
+                <img src="./img/shopping-online.gif" alt="" class="icon_img">
+                <h4 class="text-center mt-3 z1">E-commerce Website</h4>
+                <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores consequatur saepe, ab itaque eius expedita accusamus </p>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="what_img">
+                <img src="./img/presentation.gif" alt="" class="icon_img">
+                <h4 class="text-center mt-3 z1">Business Website</h4>
+                <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores consequatur saepe, ab itaque eius expedita accusamus </p>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="what_img">
+                <img src="./img/mortarboard.gif" alt="" class="icon_img">
+                <h4 class="text-center mt-3 z1">Educational Website</h4>
+                <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores consequatur saepe, ab itaque eius expedita accusamus </p>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="what_img">
+                <img src="./img/resume.gif" alt="" class="icon_img">
+                <h4 class="text-center mt-3 z1">Portfolio Website</h4>
+                <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores consequatur saepe, ab itaque eius expedita accusamus </p>
+              </div>
+            </div>
+          </div>
         </div>
     </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const whatDoSection = document.getElementById('whatido');
+    const columns = whatDoSection.querySelectorAll('.what_img');
+    
+    const options = {
+        root: null,
+        threshold: 0.1,
+    };
+
+    const callback = (entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                columns.forEach((column, index) => {
+                    setTimeout(() => {
+                        column.classList.add('animate');
+                    }, index * 300); // Delay for each column
+                });
+            }
+        });
+    };
+
+    const observer = new IntersectionObserver(callback, options);
+    observer.observe(whatDoSection);
+});
+</script>
+
+
+
+    <!-- ===================    whatido end ==============-->
+
+
+
     <div id="projects" class="section bg-project text-white">
         <div class="container'-fluid div_blur">
             <h2 class="text-center tit_le mb-5 ">Projects <span class="vasanth_span">&#47; &gt;</span></h2>
