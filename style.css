@@ -677,7 +677,7 @@ head{
 .z1{
   color: #32CECE;
   font-weight: 600;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.11);
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.237);
 
 }
 .what_img {
