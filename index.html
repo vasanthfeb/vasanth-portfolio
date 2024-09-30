@@ -11,6 +11,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"> -->
     <!-- ion cdn end -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light nav-bgc">
@@ -592,7 +596,92 @@
         </div>
     </div>
 
+<!-- ==============   dummy sec ==============-->
+<section class="creative-carousal--hero">
+  <div class="carousel-slider swiper-container-horizontal">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" data-background="https://imgpanda.com/upload/ib/YCgMd74kJD.jpg" style="background-image: url(https://imgpanda.com/upload/ib/YCgMd74kJD.jpg);">
+        <div class="inner"><h2>DISCOVER</h2> 
+          <a href="#">DISCOVER CASE</a> 
+        </div>
+      </div>
+      <div class="swiper-slide" data-background="https://imgpanda.com/upload/ib/lcLiwDdGNI.jpg" style="background-image: url(https://imgpanda.com/upload/ib/lcLiwDdGNI.jpg);">
+        <div class="inner"><h2>EXCLUSION</h2> 
+        <a href="#">DISCOVER CASE</a> 
+      </div>
+      </div>
+      <div class="swiper-slide" data-background="https://imgpanda.com/upload/ib/b20k1l8dNs.jpg" style="background-image: url(https://imgpanda.com/upload/ib/b20k1l8dNs.jpg);">
+        <div class="inner">
+          <h2>EDITIONAL</h2> 
+          <a href="#">DISCOVER CASE</a> 
+        </div>
+      </div>
+      <div class="swiper-slide" data-background="https://imgpanda.com/upload/ib/VHrpwdiZAn.jpg" style="background-image: url(https://imgpanda.com/upload/ib/VHrpwdiZAn.jpg);">
+        <div class="inner">
+          <h2>AVAILABLE</h2> 
+          <a href="#">DISCOVER CASE</a> 
+        </div>
+      </div>
+      <div class="swiper-slide" data-background="https://imgpanda.com/upload/ib/0XEWL9H9RV.jpg" style="background-image: url(https://imgpanda.com/upload/ib/0XEWL9H9RV.jpg);">
+        <div class="inner">
+          <h2>PREMIUM</h2> 
+          <a href="#">DISCOVER CASE</a> 
+        </div>
+      </div>
+    </div>
+    <!-- End Of Swiper -->
+    <div class="slide-progress"> 
+      <span>01</span>
+      <div class="swiper-pagination swiper-pagination-progressbar"><span class="swiper-pagination-progressbar-fill"></span></div>
+      <span>05</span> 
+    </div>
+    <!-- end of progress -->
+    <div class="swiper-button-prev">PREV</div>
+    <!-- end button-prev -->
+    <div class="swiper-button-next">NEXT</div>
+    <!-- end button-next -->
+    </div>
+  </section>
 
+  <script>
+    $(document).ready(function() {
+    // SLIDER
+    var carouselslider = new Swiper('.carousel-slider', {
+      spaceBetween: 0,
+      slidesPerView: 3,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'progressbar',
+      },
+      loop: true,
+      breakpoints: {
+        1024: {
+          slidesPerView: 3
+        },
+        768: {
+          slidesPerView: 2
+        },
+        640: {
+          slidesPerView: 1
+        },
+        320: {
+          slidesPerView: 1
+        }
+      }
+    });
+  });
+ 
+  </script>
+<!-- ==============   dummy sec ==============-->
 
 
     <script>
