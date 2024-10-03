@@ -131,6 +131,15 @@ body{
       border-radius: 2px;
       transition: width 0.3s ease;
   }
+  .what_img{
+    display: none !important;
+  }
+  .what_imgs{
+    display: block ;
+  }
+.vvvv{
+  display: none;
+}
 }
 
 body {
@@ -316,7 +325,9 @@ body {
   background-color: #0092CD;
   color:black;
 }
-
+.mob_hide{
+  display: none;
+}
 /* ========================    media query start ======================================*/
 
  @media only screen and (max-width: 768px){
@@ -657,6 +668,9 @@ head{
     overflow-x: hidden !important;
   }
 }
+.mob_hide{
+  display: block !important;
+}
 /* newly add for first image slide end */
 /* old yello color :#F69414 */
 
@@ -873,4 +887,15 @@ img {
     .creative-carousal--hero .swiper-button-next{
             right: 40px;
     }
+    .what_imgs{
+      display: none;
+    }
 }
+.what_imgs{
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the items horizontally */
+  justify-content: center;
+
+}
+
