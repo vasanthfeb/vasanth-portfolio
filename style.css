@@ -328,9 +328,15 @@ body {
 .mob_hide{
   display: none;
 }
+#whatidoo{
+  display: none;
+}
 /* ========================    media query start ======================================*/
 
  @media only screen and (max-width: 768px){
+  #whatidoo{
+    display: block;
+  }
     /* .mob_pad{
       margin-top: 50px !important;
     } */
