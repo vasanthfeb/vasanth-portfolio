@@ -8,14 +8,35 @@
     <link rel="stylesheet" href="./style.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"> -->
     <!-- ion cdn end -->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
+<style>
+   
+
+    .slider {
+        position: relative;
+        width: 100%;
+        height: 500px !important; 
+        overflow: hidden;
+    }
+
+    .slider-image {
+        position: absolute;
+        width: 100%;
+        height: 100% !important;
+        /* object-fit: cover; Ensures the image covers the container */
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+
+    .slider-image.active {
+        opacity: 1;
+    }
+</style>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light nav-bgc">
         <div class="container">
@@ -30,13 +51,13 @@
                         <!-- <a class="nav-link" href="#section1">Menu 1</a> -->
                         <a class="nav-link menu_color" href="./index.html">Home  <span class="menu_span">&#47; &gt;</span></a>
                     </li>
-                    <li class="nav-item hide_service">
+                    <li class="nav-item">
                         <!-- <a class="nav-link" href="#section2">Menu 2</a> -->
-                        <a class="nav-link menu_color" href="#about">About Me <span class="menu_span">&#47; &gt;</span> </a>
+                        <a class="nav-link menu_color" href="#about">About  <span class="menu_span">&#47; &gt;</span> </a>
                     </li>
-                    <li class="nav-item hide_service">
+                    <li class="nav-item">
                         <!-- <a class="nav-link" href="#section3">Menu 3</a> -->
-                        <a class="nav-link menu_color" href="#whatido">What I Do   <span class="menu_span">&#47; &gt;</span> </a>
+                        <a class="nav-link menu_color" href="#services">Services   <span class="menu_span">&#47; &gt;</span> </a>
                     </li>
                     <li class="nav-item">
                         <!-- <a class="nav-link" href="#section4">Menu 4</a> -->
@@ -50,118 +71,61 @@
             </div>
         </div>
     </nav>
-
-
-
-
-    <!-- test div start -->
-    <div id="section1" class="section sec_about new_blue">
-
-      <div class="container">
-          <div class="row slide_row mt-5 mb-5">
-              <div class="col-lg-5">
-                  <div class="slider ">
-                      <img src="./img/vas.jpg" alt="Image 1" class="slider-image w-100  first_img test-shine">
-                      <img src="./img/k.jpg" alt="Image 2" class="slider-image w-100  first_img test-shine">
-                      <img src="./img/vas.jpg" alt="Image 3" class="slider-image w-100  first_img test-shine">
-                      <img src="./img/image.psd(1).jpg" alt="Image 4" class="slider-image w-100  first_img test-shine">
-                  </div>
-                  <script>
-                      document.addEventListener('DOMContentLoaded', () => {
-                          const images = document.querySelectorAll('.slider-image');
-                          let currentIndex = 0;
-              
-                          function showNextImage() {
-                              images[currentIndex].classList.remove('active');
-                              currentIndex = (currentIndex + 1) % images.length;
-                              images[currentIndex].classList.add('active');
-                          }
-              
-                          // Initialize first image
-                          images[currentIndex].classList.add('active');
-              
-                          // Change image every 5 seconds
-                          setInterval(showNextImage, 3000);
-                      });
-                  </script>
-                  
-              </div>
-              <div class="col-lg-7">
-                  <div id="presentation">
-                      <h3 class="resume-pre text-orange">Hi! I'm</h3>
-                      <h1 class="resume-title vasanth">Vasanth</h1>
-                      <h2 class="resume-subtitle text-orange" id="resume-subtitle">I'm a <span class="subtitle-text"></span></h2>
-                      <div class="col-lg-3"><div class="mt-5"><button class="btn btn_hire w-100">Hire Me</button></div></div>
-                      
-                    </div>
-                   
-              </div>
-          </div>
-      </div>
-      
-      
-      
-      </div>
-    <!-- test div end -->
-
-
-
-
-
-
 <!-- =================   section 1 start =================== -->
-<!-- <div id="section1" class="section sec_one">
+<!-- test div start -->
+<div id="section1" class="section sec_about new_blue">
 
-<div class="container">
-    <div class="row slide_row">
-        <div class="col-lg-5">
-            <div class="slider mt-5">
-                <img src="./img/vas.jpg" alt="Image 1" class="slider-image w-100  first_img test-shine">
-                <img src="./img/k.jpg" alt="Image 2" class="slider-image w-100  first_img test-shine">
-                <img src="./img/vas.jpg" alt="Image 3" class="slider-image w-100  first_img test-shine">
-                <img src="./img/image.psd(1).jpg" alt="Image 4" class="slider-image w-100  first_img test-shine">
-            </div>
-            <script>
-                document.addEventListener('DOMContentLoaded', () => {
-                    const images = document.querySelectorAll('.slider-image');
-                    let currentIndex = 0;
-        
-                    function showNextImage() {
-                        images[currentIndex].classList.remove('active');
-                        currentIndex = (currentIndex + 1) % images.length;
-                        images[currentIndex].classList.add('active');
-                    }
-        
-                    // Initialize first image
-                    images[currentIndex].classList.add('active');
-        
-                    // Change image every 5 seconds
-                    setInterval(showNextImage, 5000);
-                });
-            </script>
+    <div class="container">
+        <div class="row slide_row mt-5 mb-5">
+            <div class="col-lg-5">
+                <div class="slider ">
+                    <img src="./img/vas.jpg" alt="Image 1" class="slider-image w-100  first_img test-shine">
+                    <img src="./img/k.jpg" alt="Image 2" class="slider-image w-100  first_img test-shine">
+                    <img src="./img/vas.jpg" alt="Image 3" class="slider-image w-100  first_img test-shine">
+                    <img src="./img/image.psd(1).jpg" alt="Image 4" class="slider-image w-100  first_img test-shine">
+                </div>
+                <script>
+                    document.addEventListener('DOMContentLoaded', () => {
+                        const images = document.querySelectorAll('.slider-image');
+                        let currentIndex = 0;
             
-        </div>
-        <div class="col-lg-7">
-            <div id="presentation">
-                <h3 class="resume-pre text-orange">Hi! I'm</h3>
-                <h1 class="resume-title vasanth">Vasanth</h1>
-                <h2 class="resume-subtitle text-orange" id="resume-subtitle">I'm a <span class="subtitle-text"></span></h2>
-                <div class="col-lg-3"><div class="mt-5"><button class="btn btn_hire w-100">Hire Me</button></div></div>
+                        function showNextImage() {
+                            images[currentIndex].classList.remove('active');
+                            currentIndex = (currentIndex + 1) % images.length;
+                            images[currentIndex].classList.add('active');
+                        }
+            
+                        // Initialize first image
+                        images[currentIndex].classList.add('active');
+            
+                        // Change image every 5 seconds
+                        setInterval(showNextImage, 3000);
+                    });
+                </script>
                 
-              </div>
-             
+            </div>
+            <div class="col-lg-7">
+                <div id="presentation">
+                    <h3 class="resume-pre text-orange">Hi! I'm</h3>
+                    <h1 class="resume-title vasanth">Vasanth</h1>
+                    <h2 class="resume-subtitle text-orange" id="resume-subtitle">I'm a <span class="subtitle-text"></span></h2>
+                    <div class="col-lg-3"><div class="mt-5"><button class="btn btn_hire w-100">Hire Me</button></div></div>
+                    
+                  </div>
+                 
+            </div>
         </div>
     </div>
-</div>
-
-
-
-</div> -->
+    
+    
+    
+    </div>
+  <!-- test div end -->
 <!-- =================   section 1 end =================== -->
 
 
 <!-- =================   section 2 start =================== -->
- <div id="about" class="section sec_about text-white">
+<div id="about" class="section sec_about text-white">
 
     <div class="container pt-5 pb-5">
         <h2 class="text-center tit_le mb-5 ">About <span class="vasanth_span">&#47; &gt;</span></h2>
@@ -271,505 +235,504 @@
     </div>
  </div>
  <!-- =================   section 2 end =================== -->
- <!-- ===================    whatido start ==============-->
     
-    <div id="whatido" class="section bg-light">
-        <div class="container vvvv">
-            <h2 class="text-center tit_le mb-5 pt-5 ">What I Do <span class="vasanth_span">&#47; &gt;</span></h2>
-        </div>
-
-
-        <div class="container pb-5 pt-3">
-          <div class="row mt-5">
-            <div class="col-lg-3">
-              <div class="what_img">
-                <img src="./img/shopping-online.gif" alt="" class="icon_img">
-                <h4 class="text-center mt-3 z1">E-commerce Website</h4>
-                <p class="text-center mt-2">I build intuitive e-commerce websites that streamline online shopping experiences. My focus is on responsive design and seamless functionality to boost sales and customer satisfaction. </p>
-              </div>
-            </div>
-            <div class="col-lg-3">
-              <div class="what_img">
-                <img src="./img/presentation.gif" alt="" class="icon_img">
-                <h4 class="text-center mt-3 z1">Business Website</h4>
-                <p class="text-center mt-2">I create dynamic business websites that drive growth and engagement. My designs prioritize functionality and professionalism to help brands stand out online. </p>
-              </div>
-            </div>
-            <div class="col-lg-3">
-              <div class="what_img">
-                <img src="./img/mortarboard.gif" alt="" class="icon_img">
-                <h4 class="text-center mt-3 z1">Educational Website</h4>
-                <p class="text-center mt-2">I specialize in developing educational websites that enhance learning experiences. My projects focus on user-friendly design and engaging content to support students and educators. </p>
-              </div>
-            </div>
-            <div class="col-lg-3">
-              <div class="what_img">
-                <img src="./img/resume.gif" alt="" class="icon_img">
-                <h4 class="text-center mt-3 z1">   Website</h4>
-                <p class="text-center mt-2">I design stunning portfolio websites that showcase creativity and skills effectively. My approach combines aesthetics and usability to help individuals and businesses make a lasting impression.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+    
+ <div id="whatido" class="section bg-light">
+    <div class="container vvvv">
+        <h2 class="text-center tit_le mb-5 pt-5 ">What I Do <span class="vasanth_span">&#47; &gt;</span></h2>
     </div>
 
+
+    <div class="container pb-5 pt-3">
+      <div class="row mt-5">
+        <div class="col-lg-3">
+          <div class="what_img">
+            <img src="./img/shopping-online.gif" alt="" class="icon_img">
+            <h4 class="text-center mt-3 z1">E-commerce Website</h4>
+            <p class="text-center mt-2">I build intuitive e-commerce websites that streamline online shopping experiences. My focus is on responsive design and seamless functionality to boost sales and customer satisfaction. </p>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="what_img">
+            <img src="./img/presentation.gif" alt="" class="icon_img">
+            <h4 class="text-center mt-3 z1">Business Website</h4>
+            <p class="text-center mt-2">I create dynamic business websites that drive growth and engagement. My designs prioritize functionality and professionalism to help brands stand out online. </p>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="what_img">
+            <img src="./img/mortarboard.gif" alt="" class="icon_img">
+            <h4 class="text-center mt-3 z1">Educational Website</h4>
+            <p class="text-center mt-2">I specialize in developing educational websites that enhance learning experiences. My projects focus on user-friendly design and engaging content to support students and educators. </p>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="what_img">
+            <img src="./img/resume.gif" alt="" class="icon_img">
+            <h4 class="text-center mt-3 z1">   Website</h4>
+            <p class="text-center mt-2">I design stunning portfolio websites that showcase creativity and skills effectively. My approach combines aesthetics and usability to help individuals and businesses make a lasting impression.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
 <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const whatDoSection = document.getElementById('whatido');
-    const columns = whatDoSection.querySelectorAll('.what_img');
-    
-    const options = {
-        root: null,
-        threshold: 0.7,
-    };
-
-    const callback = (entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                columns.forEach((column, index) => {
-                    setTimeout(() => {
-                        column.classList.add('animate');
-                    }, index * 300); // Delay for each column
-                });
-            }
-        });
-    };
-
-    const observer = new IntersectionObserver(callback, options);
-    observer.observe(whatDoSection);
-});
-</script>
-
-
-
-    <!-- ===================    whatido end ==============-->
-
-
-    <!-- mob start -->
-   <div class="mob_hide">
-    <div id="whatidoo" class="section bg-light">
-      <div class="container">
-          <h2 class="text-center tit_le mb-5 ">What I Do <span class="vasanth_span">&#47; &gt;</span></h2>
-      </div>
-
-
-      <div class="container pb-5 ">
-        <div class="row ">
-          <div class="col-lg-3">
-            <div class="what_imgs">
-              <img src="./img/shopping-online.gif" alt="" class="icon_img">
-              <h4 class="text-center mt-3 z1">E-commerce Website</h4>
-              <p class="text-center mt-2">I build intuitive e-commerce websites that streamline online shopping experiences. My focus is on responsive design and seamless functionality to boost sales and customer satisfaction. </p>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="what_imgs">
-              <img src="./img/presentation.gif" alt="" class="icon_img">
-              <h4 class="text-center mt-3 z1">Business Website</h4>
-              <p class="text-center mt-2">I create dynamic business websites that drive growth and engagement. My designs prioritize functionality and professionalism to help brands stand out online. </p>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="what_imgs">
-              <img src="./img/mortarboard.gif" alt="" class="icon_img">
-              <h4 class="text-center mt-3 z1">Educational Website</h4>
-              <p class="text-center mt-2">I specialize in developing educational websites that enhance learning experiences. My projects focus on user-friendly design and engaging content to support students and educators. </p>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="what_imgs">
-              <img src="./img/resume.gif" alt="" class="icon_img">
-              <h4 class="text-center mt-3 z1">   Website</h4>
-              <p class="text-center mt-2">I design stunning portfolio websites that showcase creativity and skills effectively. My approach combines aesthetics and usability to help individuals and businesses make a lasting impression.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-  </div>
-   </div>
-    <!-- mob end -->
-
-
-
-    <div id="projects" class="section bg-project text-white">
-        <div class="container'-fluid div_blur">
-            <h2 class="text-center tit_le mb-5 mt-5">Projects <span class="vasanth_span">&#47; &gt;</span></h2>
-
-            <div class="xxx">
-                <div id="image-container">
-                    <div class="image">
-                      <img src="./img/3.png" alt="" class="picture ">
-                    </div>
-                    <div class="image">
-                      <img src="./img/3.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/3.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/emty.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/line.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/emty.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/sql.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/emty.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/sql.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/sql.png" alt="" class="picture">
-                    </div>
-                  
-                  </div>
-                  <div id="image-container">
-                    <div class="image">
-                      <img src="./img/3.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/emty.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/3.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/sql.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/emty.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/3.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/emty.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/line.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/sql.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/emty.png" alt="" class="picture">
-                    </div>
-                  
-                  </div>
-                  
-                  <div id="image-container">
-                    <div class="image">
-                      <img src="./img/line.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/emty.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/3.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/emty.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/3.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/sql.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/emty.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/line.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/emty.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/3.png" alt="" class="picture">
-                    </div>
-                  
-                  </div>
-                  
-                  <div id="image-container">
-                    <div class="image">
-                      <img src="./img/line.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/sql.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/emty.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/sql.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/line.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/emty.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/3.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/emty.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/emty.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/line.png" alt="" class="picture">
-                    </div>
-                  
-                  </div>
-                  <div id="image-container">
-                    <div class="image">
-                      <img src="./img/line.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/emty.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/emty.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/3.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/emty.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/line.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/sql.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/3.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/emty.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/line.png" alt="" class="picture">
-                    </div>
-                  
-                  </div>
-                  <div id="image-container">
-                    <div class="image">
-                      <img src="./img/line.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/emty.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/3.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/emty.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/line.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/emty.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/3.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/sql.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/emty.png" alt="" class="picture">
-                    </div>
-                    <div class="image">
-                      <img src="./img/line.png" alt="" class="picture">
-                    </div>
-                  
-                  </div>
-                  
-                  
-               </div>
-               <div class="yyy">
-                <button class="btn btn-success btn-lg"> <a href="./projects.html" class="vp">View My Projects</a> </button>
-               </div>
-        </div>
-    </div>
-
-
-
-
-    
-    <div id="contact" class="section bg-light">
-        <div class="container">
-            <h2 class="text-center tit_le mb-5 ">Contact <span class="vasanth_span">&#47; &gt;</span></h2>
-        </div>
-        <div class="row p-5">
-          <div class="col-lg-4">
-            <img src="./img/Hand coding-bro.png" alt="" class="w-100">
-          </div>
-          <div class="col-lg-8">
-            <section class="get-in-touch">
-              <!-- <h1 class="title">Get in touch</h1> -->
-              <form class="contact-form p-2">
-                 <div class="form-field col x-50">
-                    <input id="name" class="input-text js-input" type="text" required>
-                    <label class="label" for="name">Name</label>
-                 </div>
-                 <div class="form-field col x-50">
-                    <input id="email" class="input-text js-input" type="email" required>
-                    <label class="label" for="email">E-mail</label>
-                 </div>
-                 <div class="form-field col x-50">
-                  <input id="number" class="input-text js-input" type="text" required>
-                  <label class="label" for="number">Number</label>
-               </div>
-                 <div class="form-field col x-100">
-                    <input id="message" class="input-text js-input" type="text" required>
-                    <label class="label" for="message">Message</label>
-                 </div>
-                 <div class="form-field col x-100 align-center">
-                    <input class="submit-btn" type="submit" value="Submit">
-                 </div>
-              </form>
-           </section>
-          </div>
-        </div>
-    </div>
-
-<!-- ==============   dummy sec ==============-->
-<section class="creative-carousal--hero">
-  <div class="carousel-slider swiper-container-horizontal">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide" data-background="https://imgpanda.com/upload/ib/YCgMd74kJD.jpg" style="background-image: url(https://imgpanda.com/upload/ib/YCgMd74kJD.jpg);">
-        <div class="inner"><h2>DISCOVER</h2> 
-          <a href="#">DISCOVER CASE</a> 
-        </div>
-      </div>
-      <div class="swiper-slide" data-background="https://imgpanda.com/upload/ib/lcLiwDdGNI.jpg" style="background-image: url(https://imgpanda.com/upload/ib/lcLiwDdGNI.jpg);">
-        <div class="inner"><h2>EXCLUSION</h2> 
-        <a href="#">DISCOVER CASE</a> 
-      </div>
-      </div>
-      <div class="swiper-slide" data-background="https://imgpanda.com/upload/ib/b20k1l8dNs.jpg" style="background-image: url(https://imgpanda.com/upload/ib/b20k1l8dNs.jpg);">
-        <div class="inner">
-          <h2>EDITIONAL</h2> 
-          <a href="#">DISCOVER CASE</a> 
-        </div>
-      </div>
-      <div class="swiper-slide" data-background="https://imgpanda.com/upload/ib/VHrpwdiZAn.jpg" style="background-image: url(https://imgpanda.com/upload/ib/VHrpwdiZAn.jpg);">
-        <div class="inner">
-          <h2>AVAILABLE</h2> 
-          <a href="#">DISCOVER CASE</a> 
-        </div>
-      </div>
-      <div class="swiper-slide" data-background="https://imgpanda.com/upload/ib/0XEWL9H9RV.jpg" style="background-image: url(https://imgpanda.com/upload/ib/0XEWL9H9RV.jpg);">
-        <div class="inner">
-          <h2>PREMIUM</h2> 
-          <a href="#">DISCOVER CASE</a> 
-        </div>
-      </div>
-    </div>
-    <!-- End Of Swiper -->
-    <div class="slide-progress"> 
-      <span>01</span>
-      <div class="swiper-pagination swiper-pagination-progressbar"><span class="swiper-pagination-progressbar-fill"></span></div>
-      <span>05</span> 
-    </div>
-    <!-- end of progress -->
-    <div class="swiper-button-prev">PREV</div>
-    <!-- end button-prev -->
-    <div class="swiper-button-next">NEXT</div>
-    <!-- end button-next -->
-    </div>
-  </section>
-
-  <script>
-    $(document).ready(function() {
-    // SLIDER
-    var carouselslider = new Swiper('.carousel-slider', {
-      spaceBetween: 0,
-      slidesPerView: 3,
-      centeredSlides: true,
-      autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        type: 'progressbar',
-      },
-      loop: true,
-      breakpoints: {
-        1024: {
-          slidesPerView: 3
-        },
-        768: {
-          slidesPerView: 2
-        },
-        640: {
-          slidesPerView: 1
-        },
-        320: {
-          slidesPerView: 1
-        }
-      }
-    });
+    document.addEventListener("DOMContentLoaded", function() {
+      const whatDoSection = document.getElementById('whatido');
+      const columns = whatDoSection.querySelectorAll('.what_img');
+      
+      const options = {
+          root: null,
+          threshold: 0.7,
+      };
+  
+      const callback = (entries) => {
+          entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                  columns.forEach((column, index) => {
+                      setTimeout(() => {
+                          column.classList.add('animate');
+                      }, index * 300); // Delay for each column
+                  });
+              }
+          });
+      };
+  
+      const observer = new IntersectionObserver(callback, options);
+      observer.observe(whatDoSection);
   });
- 
   </script>
-<!-- ==============   dummy sec ==============-->
-
-
-    <script>
-       $(window).scroll(function() {
-    var hT = $('#skill-bar-wrapper').offset().top,
-        hH = $('#skill-bar-wrapper').outerHeight(),
-        wH = $(window).height(),
-        wS = $(this).scrollTop();
-    if (wS > (hT+hH-1.4*wH)){
-        jQuery(document).ready(function(){
-            jQuery('.skillbar-container').each(function(){
-                jQuery(this).find('.skills').animate({
-                    width:jQuery(this).attr('data-percent')
-                }, 5000); // 5 seconds
-            });
-        });
-    }
- });
 
 
 
- //nav start
- const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
- const navbarToggler = document.querySelector('.navbar-toggler');
- const navbarCollapse = document.querySelector('#navbarNav');
 
- navLinks.forEach(link => {
-     link.addEventListener('click', () => {
-         if (navbarCollapse.classList.contains('show')) {
-             navbarToggler.click(); // Simulate a click on the toggler to close the navbar
-         }
-     });
- });
-    </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+<div id="projects" class="section bg-project text-white">
+    <div class="container'-fluid div_blur">
+        <h2 class="text-center tit_le mb-5 mt-5">Projects <span class="vasanth_span">&#47; &gt;</span></h2>
+
+        <div class="xxx">
+            <div id="image-container">
+                <div class="image">
+                  <img src="./img/3.png" alt="" class="picture ">
+                </div>
+                <div class="image">
+                  <img src="./img/3.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/3.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/emty.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/line.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/emty.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/sql.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/emty.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/sql.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/sql.png" alt="" class="picture">
+                </div>
+              
+              </div>
+              <div id="image-container">
+                <div class="image">
+                  <img src="./img/3.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/emty.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/3.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/sql.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/emty.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/3.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/emty.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/line.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/sql.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/emty.png" alt="" class="picture">
+                </div>
+              
+              </div>
+              
+              <div id="image-container">
+                <div class="image">
+                  <img src="./img/line.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/emty.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/3.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/emty.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/3.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/sql.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/emty.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/line.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/emty.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/3.png" alt="" class="picture">
+                </div>
+              
+              </div>
+              
+              <div id="image-container">
+                <div class="image">
+                  <img src="./img/line.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/sql.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/emty.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/sql.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/line.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/emty.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/3.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/emty.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/emty.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/line.png" alt="" class="picture">
+                </div>
+              
+              </div>
+              <div id="image-container">
+                <div class="image">
+                  <img src="./img/line.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/emty.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/emty.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/3.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/emty.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/line.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/sql.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/3.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/emty.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/line.png" alt="" class="picture">
+                </div>
+              
+              </div>
+              <div id="image-container">
+                <div class="image">
+                  <img src="./img/line.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/emty.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/3.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/emty.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/line.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/emty.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/3.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/sql.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/emty.png" alt="" class="picture">
+                </div>
+                <div class="image">
+                  <img src="./img/line.png" alt="" class="picture">
+                </div>
+              
+              </div>
+              
+              
+           </div>
+           <div class="yyy">
+            <button class="btn btn-success btn-lg"> <a href="./projects.html" class="vp">View My Projects</a> </button>
+           </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="contact" class="section bg-light">
+    <div class="container">
+        <h2 class="text-center tit_le mb-5 ">Contact <span class="vasanth_span">&#47; &gt;</span></h2>
+    </div>
+    <div class="row p-5">
+      <div class="col-lg-4">
+        <img src="./img/Hand coding-bro.png" alt="" class="w-100">
+      </div>
+      <div class="col-lg-8">
+        <section class="get-in-touch">
+          <!-- <h1 class="title">Get in touch</h1> -->
+          <form class="contact-form p-2">
+             <div class="form-field col x-50">
+                <input id="name" class="input-text js-input" type="text" required>
+                <label class="label" for="name">Name</label>
+             </div>
+             <div class="form-field col x-50">
+                <input id="email" class="input-text js-input" type="email" required>
+                <label class="label" for="email">E-mail</label>
+             </div>
+             <div class="form-field col x-50">
+              <input id="number" class="input-text js-input" type="text" required>
+              <label class="label" for="number">Number</label>
+           </div>
+             <div class="form-field col x-100">
+                <input id="message" class="input-text js-input" type="text" required>
+                <label class="label" for="message">Message</label>
+             </div>
+             <div class="form-field col x-100 align-center">
+                <input class="submit-btn" type="submit" value="Submit">
+             </div>
+          </form>
+       </section>
+      </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
     <script src="./script.js"></script>
-   
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const sections = document.querySelectorAll('.section');
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            window.addEventListener('scroll', function () {
+                let index = sections.length;
+
+                while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
+
+                navLinks.forEach((link) => link.classList.remove('active'));
+                navLinks[index].classList.add('active');
+            });
+
+            // Smooth scroll for anchor links
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script> -->
+
+
+
+
+    <script>
+      $(window).scroll(function() {
+   var hT = $('#skill-bar-wrapper').offset().top,
+       hH = $('#skill-bar-wrapper').outerHeight(),
+       wH = $(window).height(),
+       wS = $(this).scrollTop();
+   if (wS > (hT+hH-1.4*wH)){
+       jQuery(document).ready(function(){
+           jQuery('.skillbar-container').each(function(){
+               jQuery(this).find('.skills').animate({
+                   width:jQuery(this).attr('data-percent')
+               }, 5000); // 5 seconds
+           });
+       });
+   }
+});
+
+
+
+//nav start
+const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+const navbarToggler = document.querySelector('.navbar-toggler');
+const navbarCollapse = document.querySelector('#navbarNav');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        if (navbarCollapse.classList.contains('show')) {
+            navbarToggler.click(); // Simulate a click on the toggler to close the navbar
+        }
+    });
+});
+   </script>
+
+
+<script>
+  $(document).ready(function() {
+  // SLIDER
+  var carouselslider = new Swiper('.carousel-slider', {
+    spaceBetween: 0,
+    slidesPerView: 3,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'progressbar',
+    },
+    loop: true,
+    breakpoints: {
+      1024: {
+        slidesPerView: 3
+      },
+      768: {
+        slidesPerView: 2
+      },
+      640: {
+        slidesPerView: 1
+      },
+      320: {
+        slidesPerView: 1
+      }
+    }
+  });
+});
+
+</script>
 </body>
 </html>
