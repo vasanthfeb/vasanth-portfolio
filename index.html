@@ -551,30 +551,57 @@
         <img src="./img/Hand coding-bro.png" alt="" class="w-100">
       </div>
       <div class="col-lg-8">
+        
+
+
+
+
         <section class="get-in-touch">
-          <!-- <h1 class="title">Get in touch</h1> -->
-          <form class="contact-form p-2">
-             <div class="form-field col x-50">
-                <input id="name" class="input-text js-input" type="text" required>
-                <label class="label" for="name">Name</label>
-             </div>
-             <div class="form-field col x-50">
-                <input id="email" class="input-text js-input" type="email" required>
-                <label class="label" for="email">E-mail</label>
-             </div>
-             <div class="form-field col x-50">
-              <input id="number" class="input-text js-input" type="text" required>
-              <label class="label" for="number">Number</label>
-           </div>
-             <div class="form-field col x-100">
-                <input id="message" class="input-text js-input" type="text" required>
-                <label class="label" for="message">Message</label>
-             </div>
-             <div class="form-field col x-100 align-center">
-                <input class="submit-btn" type="submit" value="Submit">
-             </div>
+          <h1 class="title">Get in Touch</h1>
+          <form class="contact-form" id="contactForm">
+              <div class="form-field">
+                  <input id="username" class="input-text" type="text" required placeholder="Full Name">
+                 
+              </div>
+              <div class="form-field">
+                  <input id="phone" class="input-text" type="tel" required placeholder="Number">
+                 
+              </div>
+              <div class="form-field">
+                  <input id="email" class="input-text" type="email" required placeholder="E-Mail">
+                 
+              </div>
+              <div class="form-field">
+                  <textarea id="message" class="input-text" required placeholder="Message"></textarea>
+                  
+              </div>
+              <div class="form-field">
+                  <input class="submit-btn" type="submit" value="Submit">
+              </div>
           </form>
-       </section>
+          <div class="thank-you-message" style="display: none;"></div>
+      </section>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("contactForm");
+    const thankYouMessage = document.querySelector(".thank-you-message");
+
+    // Handle form submission
+    form.addEventListener("submit", (event) => {
+        event.preventDefault(); // Prevent the default form submission
+
+        const username = document.getElementById("username").value;
+        thankYouMessage.innerHTML = `Thank you, ${username}! Your message has been sent.`;
+        thankYouMessage.style.display = "block";
+
+        // Optionally, reset the form
+        form.reset();
+    });
+});
+
+      </script>
+    
       </div>
     </div>
 </div>
