@@ -515,7 +515,7 @@ body {
 .contact-form .input-text {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px  solid #ccc;
   border-radius: 4px;
 }
 
