@@ -140,6 +140,12 @@ body{
 .vvvv{
   display: none;
 }
+.beast{
+  display: block !important;
+}
+.master{
+  display: none;
+}
 }
 
 body {
@@ -147,6 +153,9 @@ body {
 }
 
 /* ==========================     nav end    ================================*/
+.beast{
+  display: none;
+}
 .sec_one{
     background-color: #0092CD;
     height: 100vh;
