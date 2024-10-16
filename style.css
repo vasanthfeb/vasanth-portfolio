@@ -640,7 +640,7 @@ div::selection{
 .slider-image {
   position: absolute;
   width: 100%;
-  height: 350px !important;
+  height: 350px ;
   object-fit: cover; 
   opacity: 0;
   transition: opacity 1s ease-in-out;
@@ -656,6 +656,10 @@ head{
   overflow-x: hidden !important;
 }
 @media only screen and (max-width:768px){
+  
+.slider-image {
+  height: 340px !important;
+}
   .slider{
     height: 300px !important;
   }
