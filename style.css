@@ -510,7 +510,9 @@ body {
     padding-bottom: 28px;
  }
  
- 
+ a{
+  text-decoration: none;
+ }
  .title {
   text-align: center;
   margin-bottom: 20px;
