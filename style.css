@@ -309,13 +309,14 @@ body {
 }
 .img-responsive{
   padding: 10px !important;
-  border: 2px solid #1E1E1E;
+  border: 3px solid #1E1E1E;
   margin-bottom: 20px;
 }
 .img-responsive:hover {
-  border: 2px solid #0092CD;
+  border: 3px solid #0092CD;
   box-shadow: rgba(64, 192, 243, 0.74) 0px 5px 15px;
   padding: 10px;
+  
  
 } 
 .pro_bg{
