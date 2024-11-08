@@ -20,6 +20,18 @@ body{
 .nav-link {
   position: relative;
 }
+/* .nav-link::before:hover{
+  color: #0092CD !important;
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 10px;
+  width: 30%;
+  height: 3px;
+  background-color: #0092CD;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+} */
 
 .nav-link.active::after {
   content: "";
@@ -643,7 +655,7 @@ div::selection{
 .slider {
   position: relative;
   width: 100%;
-  height: 350px ; 
+  height: 350px !important ; 
   overflow: hidden;
  
   /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
@@ -654,7 +666,7 @@ div::selection{
 .slider-image {
   position: absolute;
   width: 100%;
-  height: 350px ;
+  height: 350px !important;
   object-fit: cover; 
   opacity: 0;
   transition: opacity 1s ease-in-out;
