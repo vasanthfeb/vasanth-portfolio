@@ -83,7 +83,10 @@ body{
 .nav-bgc {
   background-color: black;  
   padding: 20px;
+  position: fixed;
+  width: 100% !important;
 }
+
 
 .menu_color {
   color: aliceblue !important;
