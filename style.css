@@ -900,6 +900,7 @@ img {
 .creative-carousal--hero .swiper-button-next:after{
     display: none;
 }
+
 /* ====================== Responsive Ipad =============================== */
 @media (max-width: 991px) {
     .creative-carousal--hero .carousel-slider .swiper-slide .inner h2{
