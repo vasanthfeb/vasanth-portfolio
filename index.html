@@ -83,48 +83,55 @@
 <!-- test div start -->
 <div id="section1" class="section sec_about new_blue">
 
+  
+   
+
     <div class="container">
-        <div class="row slide_row mt-5 mb-5">
-            <div class="col-lg-5 mt-5">
-                <div class="slider mt-3">
-                    <img src="./img/vas.jpg" alt="Image 1" class="slider-image w-100  first_img test-shine">
-                    <img src="./img/k.jpg" alt="Image 2" class="slider-image w-100  first_img test-shine">
-                    <img src="./img/vas.jpg" alt="Image 3" class="slider-image w-100  first_img test-shine">
-                    <img src="./img/image.psd(1).jpg" alt="Image 4" class="slider-image w-100  first_img test-shine">
-                </div>
-                <script>
-                    document.addEventListener('DOMContentLoaded', () => {
-                        const images = document.querySelectorAll('.slider-image');
-                        let currentIndex = 0;
+      <div class="row slide_row mt-5 mb-5">
+          <div class="col-lg-5 mt-5">
             
-                        function showNextImage() {
-                            images[currentIndex].classList.remove('active');
-                            currentIndex = (currentIndex + 1) % images.length;
-                            images[currentIndex].classList.add('active');
-                        }
-            
-                        // Initialize first image
-                        images[currentIndex].classList.add('active');
-            
-                        // Change image every 5 seconds
-                        setInterval(showNextImage, 3000);
-                    });
-                </script>
-                
-            </div>
-            <div class="col-lg-7">
+              <div class="slider mt-3 ">
+                  <img src="./img/vas.jpg" alt="Image 1" class="slider-image w-100  first_img test-shine">
+                  <img src="./img/k.jpg" alt="Image 2" class="slider-image w-100  first_img test-shine">
+                  <img src="./img/vas.jpg" alt="Image 3" class="slider-image w-100  first_img test-shine">
+                  <img src="./img/image.psd(1).jpg" alt="Image 4" class="slider-image w-100  first_img test-shine">
+              </div>
+              <script>
+                  document.addEventListener('DOMContentLoaded', () => {
+                      const images = document.querySelectorAll('.slider-image');
+                      let currentIndex = 0;
+          
+                      function showNextImage() {
+                          images[currentIndex].classList.remove('active');
+                          currentIndex = (currentIndex + 1) % images.length;
+                          images[currentIndex].classList.add('active');
+                      }
+          
+                      // Initialize first image
+                      images[currentIndex].classList.add('active');
+          
+                      // Change image every 5 seconds
+                      setInterval(showNextImage, 3000);
+                  });
+              </script>
               
-                <div id="presentation">
-                    <h3 class="resume-pre text-orange">Hi! I'm</h3>
-                    <h1 class="resume-title vasanth">Vasanth</h1>
-                    <h2 class="resume-subtitle text-orange" id="resume-subtitle">I'm a <span class="subtitle-text"></span></h2>
-                    <div class="col-lg-3"><div class="mt-5"><button class="btn btn_hire w-100"><a href="https://api.whatsapp.com/send?phone=919345146074&text=Hello%20Vasanth!!!" class="text-light" target="_blank">Hire Me</a></button>   </div></div>
-                    
-                  </div>
-                 
-            </div>
-        </div>
-    </div>
+          </div>
+          <div class="col-lg-7">
+            
+              
+
+              <div id="presentation">
+                  <h3 class="resume-pre text-orange">Hi! I'm</h3>
+                  <h1 class="resume-title vasanth">Vasanth</h1>
+                  <h2 class="resume-subtitle text-orange" id="resume-subtitle">I'm a <span class="subtitle-text"></span></h2>
+                  <div class="col-lg-3"><div class="mt-5"><button class="btn btn_hire w-100"><a href="https://api.whatsapp.com/send?phone=919345146074&text=Hello%20Vasanth!!!" class="text-light" target="_blank">Hire Me</a></button>   </div></div>
+                  
+                </div>
+               
+          </div>
+      </div>
+  </div>
+   
     
     
     
@@ -264,14 +271,14 @@
         </div>
         <div class="col-lg-3">
           <div class="what_img">
-            <img src="./img/presentation.gif" alt="" class="icon_img">
+            <img src="./img/presentation.gif" alt="" class="icon_img ">
             <h4 class="text-center mt-3 z1">Business Website</h4>
             <p class="text-center mt-2">I create dynamic business websites that drive growth and engagement. My designs prioritize functionality and professionalism to help brands stand out online. </p>
           </div>
         </div>
         <div class="col-lg-3">
           <div class="what_img">
-            <img src="./img/mortarboard.gif" alt="" class="icon_img">
+            <img src="./img/mortarboard.gif" alt="" class="icon_img ">
             <h4 class="text-center mt-3 z1">Educational Website</h4>
             <p class="text-center mt-2">I specialize in developing educational websites that enhance learning experiences. My projects focus on user-friendly design and engaging content to support students and educators. </p>
           </div>
