@@ -414,49 +414,55 @@
 
 
         <section class="get-in-touch">
-          <h1 class="title text-dark"> Have an <span class="title">Idea</span> or <span class="title">Project ?</span> Let's Talk</h1>
-          <form class="contact-form" id="contactForm">
+          <h1 class="title text-dark">Have an <span class="title">Idea</span> or <span class="title">Project?</span> Let's Talk</h1>
+          <form class="contact-form" id="contactForm" action="./send_email.php" method="POST">
               <div class="form-field">
-                  <input id="username" class="input-text" type="text" required placeholder="Full Name">
-                 
+                  <input name="username" id="username" class="input-text form-control" type="text" required placeholder="Full Name">
               </div>
               <div class="form-field">
-                  <input id="phone" class="input-text" type="tel" required placeholder="Number">
-                 
+                  <input name="phone" id="phone" class="input-text form-control" type="tel" required placeholder="Number">
               </div>
               <div class="form-field">
-                  <input id="email" class="input-text" type="email" required placeholder="E-Mail">
-                 
+                  <input name="email" id="email" class="input-text form-control" type="email" required placeholder="E-Mail">
               </div>
               <div class="form-field">
-                  <textarea id="message" class="input-text" required placeholder="Message"></textarea>
-                  
+                  <textarea name="message" id="message" class="input-text form-control" required placeholder="Message"></textarea>
               </div>
               <div class="form-field">
-                  <input class="submit-btn" type="submit" value="Submit">
+                  <input class="submit-btn btn btn-primary" type="submit" value="Submit">
               </div>
           </form>
-          <div class="thank-you-message" style="display: none;"></div>
+          <div class="thank-you-message text-success mt-3" style="display: none;"></div>
       </section>
 
       <script>
-        document.addEventListener("DOMContentLoaded", () => {
+       document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("contactForm");
     const thankYouMessage = document.querySelector(".thank-you-message");
 
-    // Handle form submission
-    form.addEventListener("submit", (event) => {
-        event.preventDefault(); // Prevent the default form submission
+    form.addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent page reload
 
-        const username = document.getElementById("username").value;
-        thankYouMessage.innerHTML = `Thank you, ${username}! Your message has been sent.`;
-        thankYouMessage.style.display = "block";
+        const formData = new FormData(form);
 
-        // Optionally, reset the form
-        form.reset();
+        fetch("send_email.php", {
+            method: "POST",
+            body: formData,
+        })
+        .then(response => response.text())
+        .then(data => {
+            if (data.trim() === "success") {
+                const username = document.getElementById("username").value;
+                thankYouMessage.innerHTML = `Thank you, ${username}! Your message has been sent.`;
+                thankYouMessage.style.display = "block";
+                form.reset();
+            } else {
+                alert("Error sending message. Please try again.");
+            }
+        })
+        .catch(error => console.error("Error:", error));
     });
 });
-
       </script>
     
       </div>
